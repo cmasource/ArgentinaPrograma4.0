@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+/*#5795E0
+#5473F7
+#5D51ED
+#54C9F7
+#51E9ED
+**/
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #5D51ED;
+}
+header .navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .headname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar-brand {
+  display: flex;
+}
+header .nompuesto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nombreportada {
+  display: flex;
+  text-align: center;
+  font-size: 3.2rem;
+  text-decoration: none;
+  font-family: "Life Savers", cursiva;
+  justify-content: center;
+}
+header .puesto {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: "Life Savers", cursiva;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1%;
+  font-size: larger;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  background-color: #5D51ED;
+}
+header .navbar-nav .navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: justify;
+}
+header .navbar-nav .nav-link {
+  margin: 2%;
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  color: antiquewhite;
+}
+header .fotoperfil {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-left: 33%;
+}
+
+.button-pt {
+  background: transparent;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font: 18px "Margarine", sans-serif;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 3rem;
+  padding-top: 4rem;
+  font: 500 14px "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.button-parrot .parrot {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color: transparent;
+}
+
+.button-parrot .parrot:before {
+  content: "Click Me!";
+}
+
+.button-parrot .parrot:nth-child(1) {
+  top: -30px;
+  left: -40px;
+  font: 12px/1 "Margarine", sans-serif;
+  transform: rotate(-20deg);
+  animation-duration: 0.5s;
+}
+
+.button-parrot .parrot:nth-child(2) {
+  font: 12px/1 "Margarine", sans-serif;
+  right: -40px;
+  top: -20px;
+  transform: rotate(15deg);
+  animation-duration: 0.3s;
+}
+
+.button-parrot .parrot:nth-child(3) {
+  font: 16px/1 "Margarine", sans-serif;
+  top: -60px;
+  left: 15px;
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+
+.button-parrot .parrot:nth-child(4) {
+  font: 18px/1 "Margarine", sans-serif;
+  top: -70px;
+  left: 95px;
+  transform: rotate(2deg);
+  animation-duration: 0.7s;
+}
+
+.button-parrot .parrot:nth-child(5) {
+  font: 14px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 105px;
+  transform: rotate(-20deg);
+  animation-duration: 0.8s;
+}
+
+.button-parrot .parrot:nth-child(6) {
+  font: 12px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 5px;
+  transform: rotate(10deg);
+  animation-duration: 1.2s;
+}
+
+.button-parrot button:hover .parrot:before {
+  content: "Do it!";
+  width: 70px;
+}
+
+@keyframes blink {
+  25%, 75% {
+    color: transparent;
+  }
+  40%, 60% {
+    color: #fff;
+  }
+}
+body {
+  background-color: #5795E0;
+}
+
+main {
+  margin-top: 3%;
+  text-align: center;
+  background-color: #5795E0;
+  opacity: 0.8;
+}
+main h1 {
+  font-family: "Life Savers", cursive;
+  color: #51E9ED;
+}
+main h2 {
+  font-family: "Raleway", sans-serif;
+  color: #264061;
+}
+main h3 {
+  font-family: "Life Savers", cursive;
+  color: #54C9F7;
+}
+main h4 {
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+}
+main h5 {
+  font-family: "Life Savers", cursive;
+}
+main a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.form {
+  max-inline-size: 550px;
+  margin: auto;
+}
+
+.form label {
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 0.5em;
+  padding-inline-start: 0.5em;
+}
+
+.form label span {
+  color: #DA1414;
+}
+
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: 1px solid #858C94;
+}
+
+.form textarea {
+  margin-block-end: 2em;
+  font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(15, 10, 10, 0.5333333333);
+}
+
+.h3 {
+  font-size: 48px;
+  line-height: 77px;
+}
+
+.btn {
+  /* font-family: var(--font); */
+  border-radius: 90px;
+  letter-spacing: 1.25px;
+  background: initial;
+  block-size: 50px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid var black;
+  font-weight: bold;
+  padding: 0 1.5em;
+}
+
+.btn.full {
+  width: 100%;
+  font-family: "Life Savers", cursive;
+}
+
+.btn.primary {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(1, 56, 101);
+}
+
+.btn.secondary img {
+  position: relative;
+  bottom: 1px;
+}
+
+.btn i {
+  display: inline-block;
+}
+
+.btn span {
+  vertical-align: middle;
+}
+
+.btn i img {
+  vertical-align: middle;
+}
+
+.contact {
+  margin-block-end: 0.5em;
+  background-color: #5795E0;
+}
+
+#truco {
+  opacity: 0;
+}
+
+.u-wrapper {
+  max-inline-size: 1232px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.tag span {
+  font-family: "Life Savers", cursive;
+  --padding: .5em;
+  background: var(--black);
+  color: var(--primary);
+  /*box-shadow: -4px 4px 0 white;*/
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: #5D51ED;
+  width: 100%;
+}
+footer .btn-redes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Life Savers", cursive;
+  color: #f2f2f2;
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */
